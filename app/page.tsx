@@ -27,15 +27,14 @@ export default function HomePage() {
         <div className="relative w-44 h-44 sm:w-56 sm:h-56 mx-auto mb-8 sm:mb-10">
           {zodiacSigns.map((sign, i) => {
             const angle = (i / 12) * Math.PI * 2 - Math.PI / 2;
-            const r = 88;
-            const cx = 112;
-            const x = Math.cos(angle) * r + cx;
-            const y = Math.sin(angle) * r + cx;
+            const rPct = 39;
+            const xPct = Math.round(Math.cos(angle) * rPct + 50);
+            const yPct = Math.round(Math.sin(angle) * rPct + 50);
             return (
               <motion.span
                 key={i}
                 className="absolute text-mystic-300/50 text-sm"
-                style={{ left: x - 8, top: y - 8 }}
+                style={{ left: `${xPct}%`, top: `${yPct}%`, transform: "translate(-50%, -50%)" }}
                 animate={{ opacity: [0.3, 0.8, 0.3] }}
                 transition={{ duration: 3, repeat: Infinity, delay: i * 0.25, ease: "easeInOut" }}
               >

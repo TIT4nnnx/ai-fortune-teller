@@ -56,6 +56,7 @@ export const translations = {
         title: "ผู้ทำนายกล่าวว่า",
         copy: "คัดลอกการทำนาย",
         again: "ถามคำถามอีกครั้ง",
+        showOther: "ดูคำทำนายด้านอื่นๆ",
         footer: "✦ การทำนายนี้ถูกเก็บรักษาไว้ในจักรวาล ✦",
         sections: {
           summary: "ภาพรวมจักรวาล",
@@ -141,6 +142,7 @@ export const translations = {
         title: "The Oracle Speaks",
         copy: "Copy Reading",
         again: "Ask Another Question",
+        showOther: "View Other Predictions",
         footer: "✦ This reading has been preserved in the cosmic archives ✦",
         sections: {
           summary: "Cosmic Overview",
